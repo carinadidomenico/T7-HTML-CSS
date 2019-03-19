@@ -1,0 +1,55 @@
+body {
+    margin: 0 auto;
+    background-color: rgba(137, 43, 226, 0.171);
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+}
+
+.navegacao__menu {
+    list-style: none;
+}
+
+.navegacao__menu li {
+    display: inline-block;
+    width: 100px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
+    color: rgb(171, 0, 255);
+}
+
+.navegacao__logo {
+    width: 20%;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    padding-top: 5%    
+}
+
+.conteudo__container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteudo__span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.conteudo__foto {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.conteudo__artigo {
+    width: 40%;
+}
