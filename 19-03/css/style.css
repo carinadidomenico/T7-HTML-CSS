@@ -1,14 +1,14 @@
 body {
     margin: 0 auto;
-    background-color: rgba(137, 43, 226, 0.171);
 }
 
 .navegacao {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
     background-color: white;
-    width: 100%;
+    box-shadow: 0.3px 0.3px 0.3px 0.7px rgba(128, 128, 128, 0.39);
 }
 
 .navegacao__menu {
@@ -20,18 +20,24 @@ body {
     width: 100px;
     font-family: 'Fjalla One', sans-serif;
     font-size: 15px;
-    color: rgb(171, 0, 255);
+}
+
+.navegacao__menu a {
+    text-decoration: none;
+    color: #391277;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .navegacao__logo {
-    width: 20%;
+    width: 17%;
 }
 
 .conteudo {
     display: flex;
     justify-content: space-around;
-    font-family: sans-serif;
-    padding-top: 5%    
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5%;
 }
 
 .conteudo__container {
@@ -48,8 +54,35 @@ body {
 .conteudo__foto {
     width: 150px;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 .conteudo__artigo {
     width: 40%;
+}
+
+.conteudo__perfil {
+    width: 30%;
+}
+
+.conteudo__nome {
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a9a9a9;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+
+}
+
+.rodape__imagem {
+    width: 10%;
+    margin: 0 20px;
 }
