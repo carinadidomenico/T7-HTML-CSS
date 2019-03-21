@@ -60,16 +60,23 @@ body{
 }
 
 .conteudo__video{
-    width: 50%; 
+    width: 90%; 
+    float: right;
 }
 
 .conteudo__botao{
     padding: 15px;
-    background-color: rgb(163, 0, 63);
+    background-color: #ea4862;
     text-transform: uppercase;
     border: none;
+    margin-right: 4%;
     box-shadow: 1px 1px 1px 1px gray;
     color: white;
+}
+
+.conteudo__botoes {
+    display: flex;
+    align-items: center;
 }
 
 a {
@@ -82,8 +89,8 @@ a {
 }
 
 .universidades{
-    display: inline-flex;
-    justify-content: space-between
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .universidades h6{
@@ -91,14 +98,26 @@ a {
 }
 
 .universidades__texto {
-    width: 20vw;
-    margin: 0 5px;
+    width: 20%;
+}
+
+.universidades__texto > p {
+    margin-top: 0; 
+}
+
+.universidades__texto > h4 {
+    border-bottom: 2px solid rgb(192, 31, 79);
+    font-size: 20px;
 }
 
 .rodape{
-    bottom:0; 
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    bottom:0;
+    width: 100%;
+    color: aliceblue;
     background-color: rgb(192, 31, 79);
-    height: 10%; 
-    text-align: center; 
 }
+
