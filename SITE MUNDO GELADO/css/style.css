@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.menu > a{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: #a0bed0;
+    height: 13vh;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+}
+
+.banner {
+    background-image: url(../images/foto-banner.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 87vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+}
+
+.info{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+.banner__titulo{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 105px;
+    margin: 0;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, .9) , rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.banner__paragrafo{
+    font-size: 22px;
+    color: #939393;
+}
+
+#sobre {
+    background-image: linear-gradient(black, gray);
+    color: white;
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+}
+
+.siberia{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.siberia img {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    display: block;
+}
+
+.mosaico img {
+    width: 50%;
+}
+
+.contato {
+    background-image: url(./images/foto-footer.jpg);
+    background-size: cover;
+}
+
+.mapa {
+    margin: 0 auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.formulario input , textarea {
+    width: 90vw;
+    border: none;
+    border-bottom: 1px solid black; 
+}
+
+.formulario p{
+    text-align: left;
+}
+
+.formulario:first-child {
+    text-align: center;
+}
+
+.rodape{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
