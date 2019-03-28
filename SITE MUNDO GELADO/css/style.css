@@ -3,37 +3,50 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.menu > a{
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-
 .menu {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    padding: 1.5%;
     background-color: #a0bed0;
-    height: 13vh;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+.menu__links {
+    list-style: none;
+    padding: 0 5%;
+}
+
+.menu__links li {
+    display: inline-block;
+    width: 100px;
     font-family: 'Varela Round', sans-serif;
     font-size: 14px;
+}
+
+.menu__links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .banner {
     background-image: url(../images/foto-banner.jpg);
     background-size: cover;
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 87vh;
+    min-height: 100vh;
     background-position: center bottom;
     background-repeat: no-repeat;
     filter: grayscale(100%);
 }
 
+
 .info{
-    margin: 0 auto;
+    margin: 10% auto;
     text-align: center;
     font-weight: bold;
 }
@@ -45,60 +58,170 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
+    margin-top: 5%;
 }
 
 .banner__paragrafo{
+    padding: 5%;
+    margin: 0 auto;
+    width: 50%;
     font-size: 22px;
-    color: #939393;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.botao {
+    z-index: 2;
+    background-color: #829dad;
+    color: white;
+    border: none;
+    padding: 2% 4%;
+    border-radius: 6%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Nunito';
+    filter: grayscale(0):
+}
+
+.botao:hover {
+    filter:grayscale(0);
+    transition-duration: 1s;
+    background-color: #36b0e0;
 }
 
 #sobre {
-    background-image: linear-gradient(black, gray);
+    background-image: linear-gradient( #161616, gray);
     color: white;
     text-align: center;
+    height: 50vh;
+}
+
+.sobre {
+    margin: auto;
+    width: 70%;
 }
 
 h2{
     margin: 0;
+    padding-top: 15%;
 }
 
-.siberia{
-    display: inline-block;
+.destinos{
+    width: 80%;
     margin: 0 auto;
 }
 
-.siberia img {
-    width: 50%;
-    max-width: 50%;
-    height: auto;
-    display: block;
+.siberia{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10vw;
+    padding-bottom: 5vw;
+}
+
+.siberia__img img {
+    width: 100%;
+    filter: grayscale(1)
+}
+
+.siberia__img img:hover{
+    filter: none;
+    transition-duration: 2s;
+}
+
+.siberia__texto {
+    width: 100%;
+    font-size: 16px;
+    padding-left: 2%;
+    border-left: 1vw solid #a0bed0;
 }
 
 .mosaico img {
+    width: 100%;
+    filter: grayscale(1)
+}
+
+.mosaico img:hover {
+    filter: none;
+    transition-duration: 2s;
+}
+
+.pais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.mosaico__pais {
     width: 50%;
 }
 
+.pais {
+    width: 100%;
+}
+
+.mosaico__texto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    padding-left: 3%; 
+    text-align: left;
+}
+
+.mosaico__titulo{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 22px; 
+}
+
 .contato {
-    background-image: url(./images/foto-footer.jpg);
+    background-image: url(../images/foto-footer.jpg);
     background-size: cover;
 }
 
 .mapa {
+    color: white;
+    font-size: 25px;
+    font-family: 'Varela Round';
+    width: 100%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.mapa img{
+    margin-top: 5%;
+    filter: white;
+}
+
+.mapa__img {
     margin: 0 auto;
 }
 
 .formulario {
+    
+    font-size: 22px;
+    color: white;
     display: flex;
     flex-direction: column;
     width: 80vw;
     margin: 0 auto;
     justify-content: center;
+    margin-top: 10%;
 }
 
-.formulario input , textarea {
-    width: 90vw;
+.formulario input , .formulario textarea {
+
+    background-color: transparent;
     border: none;
-    border-bottom: 1px solid black; 
+    padding: 2%;
+    border-bottom: 1px solid white;
+}
+
+.botao--enviar {
+    margin: 5% auto;
+    width: 20%;
+    background-color: #829dad;
 }
 
 .formulario p{
@@ -112,10 +235,18 @@ h2{
 .rodape{
     margin: 0 auto;
     text-align: center;
+    color: rgba(255, 255, 255, 0.541);
+}
+
+.rodape p {
+    margin: 0;
+    padding: 5%;
 }
 
 .redes-sociais {
     display: flex;
     justify-content: center;
 }
-
+.redes-sociais img {
+    padding: 2%;
+}
