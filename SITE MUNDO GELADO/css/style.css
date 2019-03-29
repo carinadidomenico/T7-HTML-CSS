@@ -1,5 +1,12 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    font-size: 16px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -33,17 +40,20 @@ body {
     text-transform: uppercase;
 }
 
+.menu__links a:hover {
+    color: gray;
+    opacity: 0.5;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
 .banner {
     background-image: url(../images/foto-banner.jpg);
     background-size: cover;
     display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
 }
-
 
 .info{
     margin: 10% auto;
@@ -75,12 +85,12 @@ body {
     color: white;
     border: none;
     padding: 2% 4%;
-    border-radius: 6%;
+    border-radius: 4%;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 18px;
     font-family: 'Nunito';
-    filter: grayscale(0):
+    filter: grayscale(0);
 }
 
 .botao:hover {
@@ -97,13 +107,19 @@ body {
 }
 
 .sobre {
+    line-height: 30px;
     margin: auto;
     width: 70%;
+    font-size: 22px;
+}
+
+sobre p {
+    font-size: 16px;
 }
 
 h2{
     margin: 0;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 .destinos{
@@ -117,6 +133,12 @@ h2{
     margin: 0 auto;
     padding-top: 10vw;
     padding-bottom: 5vw;
+}
+
+@media (max-width: 780px) {
+    .siberia {
+        flex-wrap: wrap;
+    }
 }
 
 .siberia__img img {
@@ -136,6 +158,11 @@ h2{
     border-left: 1vw solid #a0bed0;
 }
 
+h4 {
+    font-size: 22px;
+    font-family: 'Varela Round', sans-serif;
+}
+
 .mosaico img {
     width: 100%;
     filter: grayscale(1)
@@ -146,9 +173,13 @@ h2{
     transition-duration: 2s;
 }
 
+.mosaico{
+    width: 100%;
+}
+
 .pais {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: black;
     color: white;
@@ -165,14 +196,32 @@ h2{
 .mosaico__texto {
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
-    padding-left: 3%; 
+    justify-content: space-between;
+    width: 50%; 
+    padding: 5%;
     text-align: left;
+}
+
+.mosaico__texto--groelandia {
+    text-align: left;
+}
+
+.mosaico__texto--antartida {
+    text-align: right;
 }
 
 .mosaico__titulo{
     font-family: 'Varela Round', sans-serif;
     font-size: 22px; 
+    width: 100%;
+}
+
+.mosaico__titulo--groelandia {
+    text-align: left;
+}
+
+.mosaico__titulo--antartida {
+    text-align: right;
 }
 
 .contato {
@@ -189,6 +238,10 @@ h2{
     text-align: center;
 }
 
+.endereco {
+    display: none;
+}
+
 .mapa img{
     margin-top: 5%;
     filter: white;
@@ -196,6 +249,11 @@ h2{
 
 .mapa__img {
     margin: 0 auto;
+}
+
+
+.mapa__conteudo p{
+    line-height: 100px;
 }
 
 .formulario {
@@ -216,6 +274,10 @@ h2{
     border: none;
     padding: 2%;
     border-bottom: 1px solid white;
+}
+
+.formulario p {
+    margin: 2%;
 }
 
 .botao--enviar {
@@ -250,3 +312,76 @@ h2{
 .redes-sociais img {
     padding: 2%;
 }
+
+.transition {
+    transition: all 2s;
+}
+
+@media (max-width: 1024px) {
+    .menu-hamburguer {
+        display: inline-block;
+        width: 60px;  
+        margin-right: 7%;      
+    }
+
+    .menu__links {
+        display: none;
+    }
+
+    .banner {
+        height: 400px;
+    }
+    .banner__titulo {
+        font-size: 60px;
+    }
+
+    #sobre {
+        height: 100%;
+    }
+
+    .sobre {
+        font-size: 14px;
+    }
+
+    .mapa__img {
+        display: none;
+    }
+    .pais {
+        display: block;
+        border: none;
+    }
+    .mosaico__pais {
+        display: block;
+        width: 100%;
+    }
+
+    .mosaico__texto {
+        text-align: center;
+        width: 100%;
+    }
+
+    .mosaico__titulo {
+        text-align: center;
+    }
+
+    .mosaico__texto--antartida {
+        text-align: center;
+    }
+
+    .siberia__texto {
+        display: block;
+        border: none;
+        text-align: center;
+    }
+    .endereco {
+        display: block;
+    }
+
+    .formulario :first-child {
+        text-align: center;
+        font-size: 28px;
+    }
+}
+
+
+

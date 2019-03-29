@@ -11,29 +11,31 @@
 <body>
     
     <!-- Aqui começa o cabeçalho -->
-    
-    <header>
-        <nav class="menu">
-            <ul class="menu__links">
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
-                <li>
-                    <a href="#destinos">Destinos</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
+
+
+    <nav class="menu">
+        <ul class="menu__links">
+            <li>
+                <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+                <a href="#destinos">Destinos</a>
+            </li>
+            <li>
+                <a href="#contato">Contato</a>
+            </li>
+        </ul>
+        <img class="menu-hamburguer" src="../SITE MUNDO GELADO/images/134216-128.png" alt="">
         </nav>
-        <section class="banner">
+    <header>
+        <section class="banner transition">
             <div class="info">            
                 <h1 class="banner__titulo">Mundo Gelado</h1>
                 <p class="banner__paragrafo">A agencia de viagens que te leva aos lugares mais congelantes do planeta</p>
                 <button class="botao">quero saber mais</button>
             </div>
         </section>
-        <section id="sobre">
+        <section id="sobre" class="transition">
             <div class="sobre">
                 <h2>A Agencia mundo gelado</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus soluta maxime voluptatum ratione vero impedit praesentium. Aspernatur laboriosam voluptas pariatur accusantium deserunt eius.</p>
@@ -45,34 +47,33 @@
     
     <!-- Aqui começa o conteúdo -->
     
-    <main class="conteudo">
+    <main class="conteudo transition">
         <section id="destinos" class="destinos">
             <section class="siberia">
                 <div class="siberia__img">                  
                     <img src="./images/siberia-1.jpg" alt="">
                 </div>
-                <div class="siberia__texto">
+                <div class="siberia__texto transition">
                     <h4>Sibéria</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veritatis quis nihil perspiciatis eveniet consectetur doloribus dolor sit magni, harum eos culpa aliquid cupiditate, accusamus rerum ex adipisci nemo dolorem.</p>
                 </div>
             </section>
-            <section class="mosaico">
-                <div class="pais">   
+            <section class="mosaico transition">
+                <div>
+                <div class="pais transition">   
                     <div class="mosaico__pais">
                         <img  src="./images/groenlandia-1.jpg" alt="">
                     </div>
-                    <!-- <div class="mosaico__titulo">
-                        <p>Groelândia</p> 
-                    </div> -->
                     <div class="mosaico__texto">
-                        <p class="mosaico__titulo">Groelândia</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deleniti fugit? Maxime tempore, nostrum facere cum dolor unde placeat quo dolores molestias. Neque illum sequi sed aliquam tenetur nihil quibusdam!</p>
+                        <p class="mosaico__titulo mosaico__titulo--groelandia">Groelândia</p>
+                        <p class="mosaico__texto--paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deleniti fugit? Maxime tempore, nostrum facere cum dolor unde placeat quo dolores molestias. Neque illum sequi sed aliquam tenetur nihil quibusdam! Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente expedita quisquam animi necessitatibus quas harum.</p>
                     </div>                    
                 </div>
-                <div class="pais">
-                    <div class="mosaico__texto mosaico__texto--antartida">
-                        <p class="mosaico__titulo">Antartida</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores et aspernatur harum illum magni qui praesentium enim pariatur nesciunt libero doloremque, eaque ab, beatae accusamus fuga obcaecati delectus aliquam.</p>
+                </div>
+                <div class="pais transition">
+                    <div class="mosaico__texto">
+                        <p class=" mosaico__titulo mosaico__titulo--antartida">Antartida</p>
+                        <p class="mosaico__texto--antartida">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores et aspernatur harum illum magni qui praesentium enim pariatur nesciunt libero doloremque, eaque ab, beatae accusamus fuga obcaecati delectus aliquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     </div>
                     
                     <div class="mosaico__pais">
@@ -82,27 +83,28 @@
             </section>
         </section>
     </main>
-    <section class="contato">
+    <section class="contato transition">
         <section class="mapa">
             <section class="mapa__conteudo">
                 <img src="./images/icons8-avião-de-papel-50.png" alt="">
                 <p>Aonde estamos</p>
+                <p class="endereco">Avenida Paulista, 1374</p>
                 <iframe class="mapa__img" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14628.891928036977!2d-46.65606015!3d-23.56043375!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1553785390168" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
             </section>
             <section id="contato" class="formulario">
                 <p>Fale com a gente</p>
-                <p>Texto</p>
+                <p>Nome</p>
                 <input type="text"  name="texto">
                 <p>Email</p>
                 <input type="email" name="email">
                 <p>Telefone</p>
                 <input type="text" name="numero">
                 <p>Mensagem</p>
-                <textarea placeholder="Mensagem" name="mensagem" cols="30" rows="7"></textarea>
+                <textarea name="mensagem" cols="30" rows="7"></textarea>
                 <button class="botao botao--enviar">Enviar</button>
             </section>
         </section>
-        <footer class="rodape">
+        <footer class="rodape transition">
             <div>
                 <p>Telefone: (11) 1234-5678</p>
             </div>
